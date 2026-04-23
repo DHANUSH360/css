@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background-color: #f0f8ff;
+    }
+
+    /* Child selector */
+    .grand_parent > h1 {
+        color: white;
+        background-color: #6a5acd;
+    }
+
+    /* Descendant selector */
+    .grand_parent p {
+        color: #333;
+    }
+
+    /* Adjacent sibling selector */
+    h2 + p {
+        color: green;
+        font-weight: bold;
+    }
+
+    /* General sibling selector */
+    h2 ~ p {
+        color: #ff8c00;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="grand_parent">
+    <h1>Animals</h1>
+
+    <p>Tiger</p>
+    <p>Lion</p>
+
+    <div class="parent">
+        <h2>Birds</h2>
+        <p>Eagle</p>
+        <p>Peacock</p>
+
+        <div class="child">
+            <h2>Dogs</h2>
+            <p>German Shepherd</p>
+            <p>Kangal</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
