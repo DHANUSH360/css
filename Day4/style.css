@@ -1,0 +1,155 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:Arial;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.nav {
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.logo {
+  display: inline-block;
+}
+
+.menu {
+  float: right;
+  margin-right: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.hero {
+  position: relative;
+  margin-top: 60px;
+  padding:0 20px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: white;
+}
+.section{
+  padding: 40px 15px;
+}
+.section h2 {
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.section hr {
+  margin-bottom: 25px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.section-title {
+  margin: 20px;
+}
+
+.projects {
+  padding: 8px;
+}
+
+.card {
+  display: inline-block;
+  width: 22%;
+  margin: 1%;
+  position: relative;
+  vertical-align:top;
+}
+
+.card img {
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 5px;
+}
+.about-text {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.member {
+  display: inline-block;
+  width: 22%;
+  margin: 1%;
+  vertical-align: top;
+}
+
+.member img {
+  width: 100%;
+}
+
+.member h3 {
+  font-weight: normal;
+}
+
+.role {
+  color: gray;
+}
+
+.member button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.member button:hover {
+  background: #ccc;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+.contact-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: gray;
+}
+
+/* MAP */
+.map img {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
