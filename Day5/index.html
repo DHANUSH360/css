@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu Task</title>
+
+  <style>
+    /* Removes default browser spacing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #dbeafe, #f0fdf4);
+    }
+
+    /* Main navigation bar */
+    .navbar {
+      background:rgb(251, 250, 250);
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Main menu items */
+    .menu-item {
+      display: inline-block; /* Places items side by side */
+      position: relative; /* Needed so dropdown positions relative to parent */
+      margin: 0 20px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: black;
+      padding: 10px 0;
+      transition: color 0.3s ease; /* Smooth text color change */
+    }
+
+    /* Hover effect for main menu text */
+    .menu-item:hover {
+      color: green;
+    }
+
+    /* Dropdown container */
+    .dropdown {
+      display: none; /* Hidden by default */
+      position: absolute;
+      top:100%; /* Places below parent */
+      left: 0;
+      background: white;
+      min-width: 200px;
+      text-align: left;
+      z-index: 100;
+    }
+
+    /* Individual dropdown items */
+    .dropdown p {
+      padding: 12px;
+      margin: 0;
+      color:black;
+      transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect for dropdown items */
+    .dropdown p:hover {
+      background: lightgreen;
+      color: darkgreen;
+      transform: translateX(5px); /* Slight movement effect */
+    }
+
+    /* Show dropdown when hovering parent */
+    .menu-item:hover .dropdown {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+
+    <!-- Anime -->
+    <div class="menu-item">
+      <h3>Anime</h3>
+      <div class="dropdown">
+        <p>Naruto</p>
+        <p>Hajime no ippo</p>
+        <p>Black clover</p>
+        <p>Solo leveling</p>
+      </div>
+    </div>
+
+    <!-- Movies -->
+    <div class="menu-item">
+      <h3>Movies</h3>
+      <div class="dropdown">
+        <p>Kungfu hostel</p>
+        <p>Ninja Assassin</p>
+        <p>King kong</p>
+        <p>Real steel</p>
+      </div>
+    </div>
+
+    <!-- Series -->
+    <div class="menu-item">
+      <h3>Web series</h3>
+      <div class="dropdown">
+        <p>Squid game</p>
+        <p>All of us are dead</p>
+        <p>Weak hero</p>
+        <p>Wednesday</p>
+      </div>
+    </div>
+
+    <!-- Cartoons -->
+    <div class="menu-item">
+      <h3>Cartoons</h3>
+      <div class="dropdown">
+        <p>Kid vs Cat</p>
+        <p>Kick buttowski</p>
+        <p>Tom & Jerry</p>
+        <p>Ben10</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
