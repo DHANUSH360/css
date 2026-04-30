@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    padding: 15px;
+}
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 180px);
+    gap: 5px;
+
+    grid-template-areas:
+        "a b c d e"
+        "f b c d e"
+        "f g h i j"
+        "k g l i m";
+}
+.gallery div {
+    border: 2px solid white;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.img1 {
+    grid-area: a;
+}
+
+.img2 {
+    grid-area: b;
+}
+
+.img3 {
+    grid-area: c;
+}
+
+.img4 {
+    grid-area: d;
+}
+
+.img5 {
+    grid-area: e;
+}
+
+.img6 {
+    grid-area: f;
+}
+.img7 {
+    grid-area: g;
+}
+
+.img8 {
+    grid-area: h;
+}
+
+.img9 {
+    grid-area: i;
+}
+
+.img10 {
+    grid-area: j;
+}
+
+.img11 {
+    grid-area: k;
+}
+.img12 {
+    grid-area: l;
+}
+
+.img13 {
+    grid-area: m;
+}
+
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="img1"><img src="./images/img1.png"></div>
+    <div class="img2"><img src="./images/img2.png"></div>
+    <div class="img3"><img src="./images/img3.png"></div>
+    <div class="img4"><img src="./images/img4.png"></div>
+    <div class="img5"><img src="./images/img5.png"></div>
+    <div class="img6"><img src="./images/img6.png"></div>
+    <div class="img7"><img src="./images/img7.png"></div>
+    <div class="img8"><img src="./images/img8.png"></div>
+    <div class="img9"><img src="./images/img9.png"></div>
+    <div class="img10"><img src="./images/img10.png"></div>
+    <div class="img11"><img src="./images/img11.png"></div>
+    <div class="img12"><img src="./images/img12.png"></div>
+    <div class="img13"><img src="./images/img13.png"></div>
+</div>
+  
+</body>
+</html>
