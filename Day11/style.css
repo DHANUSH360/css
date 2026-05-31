@@ -1,0 +1,35 @@
+.container{
+    text-align:center;
+}
+
+.image-box{
+    height:500px;
+    overflow:auto;
+}
+
+#image{
+    width:400px;
+    transition:0.3s;
+}
+
+.controls{
+    position:fixed;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    gap:20px;
+
+    padding:12px 20px;
+
+    background:#1f2330;
+    border-radius:30px;
+}
+.controls button{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
